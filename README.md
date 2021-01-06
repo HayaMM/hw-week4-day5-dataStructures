@@ -37,13 +37,3 @@ You did not like the old way so you decided to have a menu :
    1. Create a ``` HashMap ``` object called menu.
    2. add dishes and prices as keys and values.
    3. print the menu
-
----
-### Deliverable  
-1. When finished, `git add .`, `git commit -m " "`, `git push origin master` to your fork and submit a pull request.
-2. Please fill up the following questions when you pull request:
-- on a scale from 1 to 5, how comfortable were you with this assignment? (1 is very difficult)
-- How long did it take?
-- What was a challenge you had with this assignment?
-- Is there anything that you'd like some further information on?
-- Do you have any suggestions to improve this assignment?
