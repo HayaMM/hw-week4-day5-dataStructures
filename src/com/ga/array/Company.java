@@ -17,17 +17,17 @@ public class Company {
 	}
 
 	// Class methods
-	// AddStaff adds the received Staff in the first empty location of sList
-	public void AddStaff(Staff s) {
+	// addStaff adds the received Staff in the first empty location of sList
+	public void addStaff(Staff s) {
 
 		// your code goes here
 
 	}
 
-	// RemoveStaff deletes the Staff from sList with the same given ID number
+	// removeStaff deletes the Staff from sList with the same given ID number
 	// by shifting the array to the left.
 	// If the given ID doesn't exist then false will be returned.
-	public boolean RemoveStaff(String id) {
+	public boolean removeStaff(String id) {
 		boolean done = false;
 
 		// your code goes here
@@ -36,13 +36,13 @@ public class Company {
 
 	}
 
-	// SearchByGender to search sList for the staffs of a specific gender (F or M;
+	// searchByGender to search sList for the staffs of a specific gender (F or M;
 	// where F for female and M for male) and return an array containing these
 	// staffs.
 	// The size of the returned array should be exactly as the number of Staffs
-	// belonging to the selected gender ìno empty elementsî.
+	// belonging to the selected gender ‚Äúno empty elements‚Äù.
 
-	public void SearchByGender(char g) { // Change void to an array of Staff
+	public void searchByGender(char g) { // Change void to an array of Staff
 
 		// your code goes here
 	}
