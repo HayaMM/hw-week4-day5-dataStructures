@@ -20,7 +20,11 @@ public class Company {
 	// addStaff adds the received Staff in the first empty location of sList
 	public void addStaff(Staff s) {
 
-		// your code goes here
+		for(int i=0;i<sList.length;i++){
+			if(sList[i]==null) {
+			sList[i]=s;
+			numS++;
+			}}// your code goes here
 
 	}
 
@@ -30,7 +34,15 @@ public class Company {
 	public boolean removeStaff(String id) {
 		boolean done = false;
 
-		// your code goes here
+		for(int i=0;i<numS;i++){
+			if(sList[i].getID().equals(id)) {
+				done=true;
+				numS--;
+				sList[i]=sList[i+1];
+			}else {
+				done=false;
+				}
+		}// your code goes here
 
 		return done;
 
@@ -42,9 +54,22 @@ public class Company {
 	// The size of the returned array should be exactly as the number of Staffs
 	// belonging to the selected gender “no empty elements”.
 
-	public void searchByGender(char g) { // Change void to an array of Staff
+	public Staff[] searchByGender(char g) { // Change void to an array of Staff
+		int thelength=0;
 
-		// your code goes here
+		for(int i=0;i<numS;i++){
+			if(sList[i].getGender()==g) {
+				thelength++;
+			}
+		}
+		Staff[] stafg=new Staff[thelength];
+		int num=0;
+		for(int j=0;j<numS;j++){
+			if(sList[j].getGender()==g) {
+				stafg[num]=sList[j];
+				num++;
+		}// your code goes here
+	}return stafg;
 	}
 
 	public void printCompany() { // print names and genders
